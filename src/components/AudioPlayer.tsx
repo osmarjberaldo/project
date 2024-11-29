@@ -4,6 +4,7 @@ import AudioVisualizer from './AudioVisualizer';
 import PlayButton from './PlayButton';
 import VolumeControl from './VolumeControl';
 import ErrorMessage from './ErrorMessage';
+import NowPlaying from './NowPlaying';
 import { RADIO_CONFIG } from '../constants/config';
 
 const AudioPlayer = () => {
@@ -35,6 +36,8 @@ const AudioPlayer = () => {
         <h1 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
           {RADIO_CONFIG.name}
         </h1>
+
+        <NowPlaying />
 
         <ErrorMessage message={error} />
         
